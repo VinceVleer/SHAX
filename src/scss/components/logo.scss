@@ -1,0 +1,57 @@
+@font-face {
+    font-family: futurist;
+    src: url(src/fonts/FUTRFW.TTF);
+}
+
+.logo {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: hidden; // hide vertical
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    &__center {
+        position: relative;
+        width: 490px;
+        height: 360px;
+        margin: 0 auto;
+    }
+
+    &__white {
+        color: white;
+        font-family: futurist;
+        font-size: 72pt;
+        text-align: center;
+        margin: 0 auto;
+        // text-shadow: 20px 20px 10px #00000080;
+    }
+
+    &__red {
+        position: absolute;
+        left: 460px;
+        top: 176px;
+        color: #bf0b0b;
+        font-family: futurist;
+        font-size: 120pt;
+
+        &--jap {
+            color: #bf0b0b;
+            // text-shadow: 20px 20px 10px #00000080;
+        }
+    }
+
+    &__grey {
+        position: absolute;
+        left: 128px;
+        top: 5px;
+        color: #808080;
+        text-align: center;
+        font-size: 22pt;
+        margin: 0 0;
+        // text-shadow: 20px 20px 10px #00000080;
+    }
+}

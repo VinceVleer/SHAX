@@ -1,0 +1,29 @@
+@font-face {
+    font-family: futurist;
+    src: url(src/fonts/FUTRFW.TTF);
+}
+
+.songtitle {
+    max-width: 1024px;
+    margin: auto;
+
+    &__title {
+        color: white;
+        font-family: futurist;
+        font-size: 52pt;
+        margin-top: 20vh;
+    }
+
+    &__line {
+        height: 2px;
+        background-color: white;
+    }
+
+    &__number {
+        color: white;
+        font-family: futurist;
+        font-size: 24pt;
+        text-align: end;
+        margin-bottom: 20vh;
+    }
+}

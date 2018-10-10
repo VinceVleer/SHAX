@@ -1,0 +1,60 @@
+@font-face {
+    font-family: futurist;
+    src: url(src/fonts/FUTRFW.TTF);
+}
+
+@font-face {
+    font-family: futurist_regular;
+    src: url(src/fonts/futurist_regular.ttf);
+}
+
+#songs {
+    font-family: futurist;
+    text-align: center;
+    color: white;
+    margin: 100px 0;
+}
+
+.songs {
+
+    &__container {
+        max-width: 1180px;
+        margin: 0 auto 100px;
+        display: grid;
+        grid-template-columns: 180px 180px 180px 180px 180px 180px;
+        grid-template-rows: 150px 150px 150px 150px 150px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    &__item {
+        cursor: pointer;
+    }
+
+    &__cover {
+        pointer-events: none;
+        margin-left: 40px;
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        background-size: cover;
+        transition: all 0.1s;
+
+        &:hover {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &__songtitle {
+        font-family: futurist_regular;
+        font-size: 12pt;
+        text-align: center;
+        margin: 10px auto;
+        color: white;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+    }
+}

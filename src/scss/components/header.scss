@@ -1,0 +1,29 @@
+@font-face {
+    font-family: futurist;
+    src: url(src/fonts/FUTRFW.TTF);
+}
+
+.header {
+    height: 50px;
+    background-color: #171717;
+    box-shadow: 0 0 8px 2px #00000080;
+    position: sticky;
+    top: 0;
+
+    &__title {
+        font-size: 16pt;
+        text-align: center;
+        color: white;
+        font-family: futurist;
+        margin: 0;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+
+        &--red {
+            color: #bf0b0b;
+            font-size: 24pt;
+        }
+    }
+}

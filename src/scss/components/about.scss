@@ -1,0 +1,45 @@
+@font-face {
+    font-family: futurist_regular;
+    src: url(src/fonts/futurist_regular.ttf);
+}
+
+.about {
+    height: 1000px;
+    background-color: #171717;
+    box-shadow: 0 0 8px 2px #00000080;
+
+    &__title {
+        color: white;
+        margin: 0 auto;
+        // text-align: center;
+        font-family: futurist;
+        font-size: 36pt;
+        max-width: 1240px;
+    }
+
+    &__container {
+        display: flex;
+        max-width: 1240px;
+        margin: auto;
+    }
+
+    &__text {
+        color: white;
+        margin: 20px 20px 20px 0;
+        font-family: futurist_regular;
+        font-size: 12pt;
+    }
+
+    &__cover {
+        box-shadow: 0 0 8px 2px #00000080;
+        width: 400px;
+        height: 400px;
+        transition: all 0.3s;
+
+        &:hover {
+            box-shadow: 10px 10px 20px 2px #00000080;
+            width: 410px;
+            height: 410px;
+        }
+    }
+}
